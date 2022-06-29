@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { signUp } from '../../utilities/users-service';
 
+
 export default class SignUpForm extends Component {
   state = {
     name: "",
@@ -60,7 +61,9 @@ handleSubmit = async (evt) => {
           </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
+       
       </div>
+   
     );
   }
 }
